@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: linear-gradient(45deg,#fc83c5,#f6fa2d);
+    box-shadow: 0 3px 40px #f6fa2d;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.img{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(255, 0, 140, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .id{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .id .name{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.card:hover .id .name{
+    transform: translateY(0px);
+}
+.card .id .name h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.2em;
+}
+.card .id .name .followers{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .id .name .followers h3{
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .id .name .followers h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card .id .name .Btn{
+    display: flex;
+    justify-content: space-between;
+}
+.card .id .name .Btn button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #000000;
+    color: #000000;
+    background: none;
+}
+.card .id .name .Btn button:nth-child(2){
+    border: 1px solid #000000;
+    color: #000000;
+    background: none;
+}
+.card .id .name .Btn button:hover{
+    background-color: #e6e7b0;
+}
